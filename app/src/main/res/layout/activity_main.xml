@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:id="@+id/et_first"
+    android:hint="enter first name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/et_last"
+        android:hint="enter last name"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:onClick="adduser"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="View  All Details"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:onClick="viewdetails"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_search"
+        android:hint="Enter the name you search for"
+        android:layout_margin="5dp"
+        android:gravity="center"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Get Details "
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:onClick="search"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_newfirst"
+        android:hint="Enter name to update or delete"
+        android:layout_margin="5dp"
+        android:gravity="center"/>
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/et_newlast"-->
+        <!--android:hint="Enter new last name"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:gravity="center"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:onClick="update"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:onClick="delete"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>
